@@ -1,6 +1,6 @@
 package com.soobinhand.web;
 
-import com.soobinhand.service.PostsService;
+import com.soobinhand.service.*;
 import com.soobinhand.web.dto.PostsResponseDto;
 import com.soobinhand.web.dto.PostsSaveRequestDto;
 import com.soobinhand.web.dto.PostsUpdateRequestDto;
