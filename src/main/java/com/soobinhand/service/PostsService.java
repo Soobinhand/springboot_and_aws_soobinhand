@@ -6,6 +6,7 @@ import com.soobinhand.web.dto.*;
 import com.soobinhand.web.dto.PostsResponseDto;
 import com.soobinhand.web.dto.PostsSaveRequestDto;
 import com.soobinhand.web.dto.PostsUpdateRequestDto;
+import javafx.geometry.Pos;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -28,6 +29,12 @@ public class PostsService {
         Posts posts = postsRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("해당 게시글이 없습니다. id="+id));
         posts.update(requestDto.getTitle(), requestDto.getContent());
         return id;
+    }
+    @Transactional
+    public void delete(Long id){
+        Posts posts = postsRepository.findById(id)
+                .orElseThrow(() -> new IllegalArgumentException("해당 게시글이 없습니다. id="+id));
+        postsRepository.delete(posts);
     }
 
     public PostsResponseDto findById(Long id){
