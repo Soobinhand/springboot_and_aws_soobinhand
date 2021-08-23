@@ -1,7 +1,6 @@
 package com.soobinhand.domain.posts;
 
 import com.soobinhand.domain.BaseTimeEntity;
-import javafx.geometry.Pos;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
