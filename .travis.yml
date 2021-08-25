@@ -17,7 +17,7 @@ script: "./gradlew clean build"
 before_deploy:
   - zip -r springboot_and_aws_soobinhand *
   - mkdir -p deploy
-  - mv springboot_and_aws_soobinhand.zip delpoy/springboot_and_aws_soobinhand.zip
+  - mv springboot_and_aws_soobinhand.zip deploy/springboot_and_aws_soobinhand.zip
 
 deploy:
   - provider: s3
