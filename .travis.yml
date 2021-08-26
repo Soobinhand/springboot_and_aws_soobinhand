@@ -29,6 +29,16 @@ deploy:
     acl: private
     local_dir: deploy
     wait-until-deployed: true
+  - provider: codedeploy
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: $AWS_SECRET_KEY
+    bucket: springboot_and_aws_soobinhand_build
+    key: springboot-and-aws-soobinhand.zip
+    bundle-type: zip
+    application: springboot-and-aws-soobinhand
+    deployment_group: springboot-and-aws-soobinhand-group
+    region: ap-northeast-2
+    wait-until-deployed: true
 
 notifications:
   email:
