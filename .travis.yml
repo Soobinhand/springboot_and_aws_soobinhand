@@ -36,7 +36,7 @@ deploy:
     key: springboot_and_aws_soobinhand.zip
     bundle_type: zip
     application: springboot_and_aws_soobinhand
-    deployment_group: springboot-and-aws-soobinhand-group
+    deployment_group: springboot_and_aws_soobin
     region: ap-northeast-2
     wait-until-deployed: true
 
