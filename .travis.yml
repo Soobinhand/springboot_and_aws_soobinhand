@@ -33,7 +33,7 @@ deploy:
     access_key_id: $AWS_ACCESS_KEY
     secret_access_key: $AWS_SECRET_KEY
     bucket: springboot-and-aws-soobinhand-build
-    key: springboot-and-aws-soobinhand.zip
+    key: springboot_and_aws_soobinhand.zip
     bundle-type: zip
     application: springboot-and-aws-soobinhand
     deployment_group: springboot-and-aws-soobinhand-group
